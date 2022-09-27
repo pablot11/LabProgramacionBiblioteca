@@ -1,0 +1,12 @@
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\bin\Debug\pryTorresBiblioteca.exe.config
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\bin\Debug\pryTorresBiblioteca.exe
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\bin\Debug\pryTorresBiblioteca.pdb
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.csproj.AssemblyReference.cache
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.csproj.SuggestedBindingRedirects.cache
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.frmConsultaLibros.resources
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.frmMain.resources
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.Properties.Resources.resources
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.csproj.GenerateResource.cache
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.exe
+C:\Users\PABLO\OneDrive\Desktop\Proyectos\pryTorresBiblioteca-20220918T035647Z-001\pryTorresBiblioteca\obj\Debug\pryTorresBiblioteca.pdb

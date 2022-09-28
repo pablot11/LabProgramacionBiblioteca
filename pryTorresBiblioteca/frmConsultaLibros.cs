@@ -70,6 +70,7 @@ namespace pryTorresBiblioteca
                 varIndice++;
             }
             objLectorLibros.Close();
+            //Cuando abra el formulario va a aparecer la primera consulta
             txtCodigoLibro.Text = vecBiblioteca[0].varCodigoLibro;
             txtNombreLibro.Text = vecBiblioteca[0].varNombre;
             txtCodigoEditorial.Text = vecBiblioteca[0].varCodigoEditorial;

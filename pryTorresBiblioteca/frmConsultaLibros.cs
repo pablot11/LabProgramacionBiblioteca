@@ -64,7 +64,7 @@ namespace pryTorresBiblioteca
                 vecBiblioteca[varIndice].varCodigoAutor = vecLibros[3];
                 vecBiblioteca[varIndice].varCodigoDistribuidor = vecLibros[4];
                 // Procedimientos del programador con sus respectivos parametros
-                // Un parametro retorna un valor
+                // Un parametro retorna un valor 0
                 NombreEditorial(varIndice);
                 NombreDistribuidora(varIndice);
                 varIndice++;
@@ -97,6 +97,9 @@ namespace pryTorresBiblioteca
 
                 btnSiguente.Enabled = false;
             }
+
+
+
         }
 
  
@@ -131,32 +134,41 @@ namespace pryTorresBiblioteca
             StreamReader srLeerEditorial = new StreamReader("./EDITORIAL.txt");
             while (!srLeerEditorial.EndOfStream)
             {
+                //Se asigna um renglon del archivo al vector, el split serapara en cada posicion del vec
                 string[] vecEditorial = srLeerEditorial.ReadLine().Split(',');
-                for (int pos = 0; pos < vecEditorial.Length; pos++)
+                //Elimina los espacios en blancos de las posiciones de memoria
+                for (int varI = 0; varI < vecEditorial.Length; varI++)
                 {
-                    vecEditorial[pos] = Regex.Replace(vecEditorial[pos], @"\t", "");
+                    vecEditorial[varI] = Regex.Replace(vecEditorial[varI], @"\t", "");
                 }
+                // Si la posicion del vec es igual a la varcodigo, se cambia el numero por el nombre
                 if (vecEditorial[0] == vecBiblioteca[varProcedimientoEditorial].varCodigoEditorial)
                 {
+                    //Se cambia el numero por el nombre 
                     vecBiblioteca[varProcedimientoEditorial].varCodigoEditorial = vecEditorial[1];
                 }              
             }
             srLeerEditorial.Close();
         }
         
-        //Indice interno el index 
+        //El parametro retoma el valor de la variable indice 
         private void NombreDistribuidora(int varIndiceNombreDistribuidora)
         {
+            //
             StreamReader srLeerDistribuidora = new StreamReader("./DISTRIBUIDORA.txt");
             while (!srLeerDistribuidora.EndOfStream)
             {
+                //Se asigna um renglon del archivo al vector, el split serapara en cada posicion del vec
                 string[] vecDistribuidora = srLeerDistribuidora.ReadLine().Split(',');
-                for (int pos = 0; pos < vecDistribuidora.Length; pos++)
+                //Elimina los espacios en blancos de las posiciones de memoria
+                for (int varI = 0; varI < vecDistribuidora.Length; varI++)
                 {
-                    vecDistribuidora[pos] = Regex.Replace(vecDistribuidora[pos], @"\t", "");
+                    vecDistribuidora[varI] = Regex.Replace(vecDistribuidora[varI], @"\t", "");
                 }
+                // Si la posicion del vec es igual a la varcodigo, se cambia el numero por el nombre
                 if (vecDistribuidora[0] == vecBiblioteca[varIndiceNombreDistribuidora].varCodigoDistribuidor)
                 {
+                    //Se cambia el numero por el nombre 
                     vecBiblioteca[varIndiceNombreDistribuidora].varCodigoDistribuidor = vecDistribuidora[1];
                 }
             }

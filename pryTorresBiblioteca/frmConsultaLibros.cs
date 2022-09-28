@@ -58,8 +58,6 @@ namespace pryTorresBiblioteca
                     vecLibros[varIndiceVector] = Regex.Replace(vecLibros[varIndiceVector], @"\t", "");
                 }
                 //Asigno en la posicion del varIndice, como esta la estructura voy a asignarle a cada variable dentro una posicion del vector
-
-
                 vecBiblioteca[varIndice].varCodigoLibro = vecLibros[0];
                 vecBiblioteca[varIndice].varNombre = vecLibros[1];
                 vecBiblioteca[varIndice].varCodigoEditorial = vecLibros[2];
@@ -72,10 +70,16 @@ namespace pryTorresBiblioteca
                 varIndice++;
             }
             objLectorLibros.Close();
+            txtCodigoLibro.Text = vecBiblioteca[0].varCodigoLibro;
+            txtNombreLibro.Text = vecBiblioteca[0].varNombre;
+            txtCodigoEditorial.Text = vecBiblioteca[0].varCodigoEditorial;
+            txtAutor.Text = vecBiblioteca[0].varCodigoAutor;
+            txtDistribuidor.Text = vecBiblioteca[0].varCodigoDistribuidor;
+
         }
 
         private void btnSiguente_Click(object sender, EventArgs e)
-        {      
+        {
             // Mientras la variable sea menor a la dimension del vector para lo siguiente
             if (varIndiceRecorrido < vecBiblioteca.Length)
             {
@@ -86,7 +90,7 @@ namespace pryTorresBiblioteca
                 txtAutor.Text = vecBiblioteca[varIndiceRecorrido].varCodigoAutor;
                 txtDistribuidor.Text = vecBiblioteca[varIndiceRecorrido].varCodigoDistribuidor;
                 varIndiceRecorrido++;
-            }
+            }          
             //Si el varIndice es igual a la dimension del vector el boton se desactiva
             if (varIndiceRecorrido == vecBiblioteca.Length)
             {
@@ -113,17 +117,17 @@ namespace pryTorresBiblioteca
                 {
                     btnAtras.Enabled = false;
                 }
-
             }
             else
             {
                 btnAtras.Enabled = false;
-            }
-        
+            }        
         }
         //Se declara una variable para reemplazar el nombre
+
         private void NombreEditorial(int varProcedimientoEditorial)
         {
+
             StreamReader srLeerEditorial = new StreamReader("./EDITORIAL.txt");
             while (!srLeerEditorial.EndOfStream)
             {

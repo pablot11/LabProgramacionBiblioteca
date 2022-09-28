@@ -22,5 +22,15 @@ namespace pryTorresBiblioteca
             frmConsultaLibros objVentanaLibros = new frmConsultaLibros();
             objVentanaLibros.ShowDialog();
         }
+
+        private void msBiblioteca_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
